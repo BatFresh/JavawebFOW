@@ -1,5 +1,7 @@
 package com.OTOF.service.impl;
 
+import java.util.List;
+
 import com.OTOF.dao.IUserDao;
 import com.OTOF.dao.impl.UserDaoImpl;
 import com.OTOF.domain.User;
@@ -10,17 +12,37 @@ public class UserServiceImpl implements IUserService{
 	
 	private IUserDao userDao = new UserDaoImpl();
 	@Override
-	public void registerUser(User user) throws UserExistException {
-		if (userDao.find(user.getUsername())!=null) {
-				//这里抛编译时异常的原因：是我想上一层程序处理这个异常，以给用户一个友好提示
-				throw new UserExistException("注册的用户名已存在！！！");
-				}
-				userDao.add(user);
+	public boolean registerUser(User user) throws UserExistException {
+		return userDao.add(user);
 	}
 
 	@Override
 	public User loginUser(String userName, String userPwd) {
 		return userDao.find(userName, userPwd);
+	}
+
+	@Override
+	public boolean modifyUserinfo(User user) {
+		// TODO Auto-generated method stub
+		return userDao.doupdateuserinfo(user);
+	}
+
+	@Override
+	public List findalluser() {
+		// TODO Auto-generated method stub
+		return userDao.dofindalluser();
+	}
+
+	@Override
+	public List finduser(User user) {
+		// TODO Auto-generated method stub
+		return userDao.dofinduser(user);
+	}
+
+	@Override
+	public User finduserbyid(User user) {
+		// TODO Auto-generated method stub
+		return userDao.dofinduserbyid(user);
 	}
 
 }

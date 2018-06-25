@@ -1,5 +1,7 @@
 package com.OTOF.dao;
 
+import java.util.List;
+
 import com.OTOF.domain.User;
 
 public interface IUserDao {
@@ -9,15 +11,23 @@ public interface IUserDao {
 	 * @return 返回查到的用户
 	 */
 	User find(String Username,String Userpwd);
-	/**根据用户名查找用户
-	 * @param Username
-	 * @return 返回查到的用户
-	 */
-	User find(String Username);
+
 	/**添加用户
 	 * @param User
 	 * 
 	 * 
 	 */
-	void add(User user);
+	boolean add(User user);
+	/**修改用户信息
+	 * @param User
+	 * 
+	 * 
+	 */
+	boolean doupdateuserinfo(User user);
+	
+	List dofindalluser();
+	
+	User dofinduserbyid(User user);
+	
+	List dofinduser(User user);
 }

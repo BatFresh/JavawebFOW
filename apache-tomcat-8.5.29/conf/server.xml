@@ -149,7 +149,9 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="D:\java_project\Tomcat\apache-tomcat-8.5.29-windows-x64\apache-tomcat-8.5.29\wtpwebapps\web_homework-4.10" path="/web_homework-4.10" reloadable="true" source="org.eclipse.jst.jee.server:web_homework-4.10"/></Host>
+      <Context docBase="OrderTakeOutFood" path="/OrderTakeOutFood" reloadable="true" source="org.eclipse.jst.jee.server:OrderTakeOutFood">
+     <Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" maxActive="8" maxIdle="4" name="jdbc/datasource" password="root" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3306/otof?characterEncoding=utf8" username="root"/>
+</Context></Host>
     </Engine>
   </Service>
 </Server>

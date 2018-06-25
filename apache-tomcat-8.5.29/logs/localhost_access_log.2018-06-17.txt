@@ -1,0 +1,14 @@
+127.0.0.1 - - [17/Jun/2018:23:26:01 +0800] "GET / HTTP/1.1" 200 11452
+0:0:0:0:0:0:0:1 - - [17/Jun/2018:23:26:23 +0800] "GET /OrderTakeOutFood/ HTTP/1.1" 404 1095
+0:0:0:0:0:0:0:1 - - [17/Jun/2018:23:26:43 +0800] "GET / HTTP/1.1" 200 11452
+0:0:0:0:0:0:0:1 - - [17/Jun/2018:23:26:43 +0800] "GET /tomcat.png HTTP/1.1" 200 5103
+0:0:0:0:0:0:0:1 - - [17/Jun/2018:23:26:43 +0800] "GET /tomcat.css HTTP/1.1" 200 5931
+0:0:0:0:0:0:0:1 - - [17/Jun/2018:23:26:43 +0800] "GET /bg-upper.png HTTP/1.1" 200 3103
+0:0:0:0:0:0:0:1 - - [17/Jun/2018:23:26:43 +0800] "GET /bg-middle.png HTTP/1.1" 200 1918
+0:0:0:0:0:0:0:1 - - [17/Jun/2018:23:26:43 +0800] "GET /bg-button.png HTTP/1.1" 200 713
+0:0:0:0:0:0:0:1 - - [17/Jun/2018:23:26:43 +0800] "GET /bg-nav.png HTTP/1.1" 200 1401
+0:0:0:0:0:0:0:1 - - [17/Jun/2018:23:26:43 +0800] "GET /asf-logo-wide.svg HTTP/1.1" 200 27530
+0:0:0:0:0:0:0:1 - - [17/Jun/2018:23:28:05 +0800] "POST /OrderTakeOutFood/UploadHandleServlet HTTP/1.1" 200 77
+0:0:0:0:0:0:0:1 - - [17/Jun/2018:23:55:35 +0800] "POST /OrderTakeOutFood/UploadHandleServlet?imagestatus=1 HTTP/1.1" 200 155
+0:0:0:0:0:0:0:1 - - [17/Jun/2018:23:56:18 +0800] "POST /OrderTakeOutFood/UploadHandleServlet?imagestatus=1 HTTP/1.1" 200 155
+0:0:0:0:0:0:0:1 - - [17/Jun/2018:23:58:44 +0800] "POST /OrderTakeOutFood/UploadHandleServlet?imagestatus=1 HTTP/1.1" 200 78

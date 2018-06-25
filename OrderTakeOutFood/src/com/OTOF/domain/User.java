@@ -4,22 +4,27 @@ import java.io.Serializable;
 
 public class User implements Serializable{
 
+	@Override
+	public String toString() {
+		return "User [UserID=" + UserID + ", Username=" + Username + ", Userpwd=" + Userpwd + ", Usertel=" + Usertel
+				+ ", Useraddr=" + Useraddr + ", PersonalName=" + PersonalName + "]";
+	}
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 	
-	private int id;
+	private Integer UserID;
 	private String Username;
 	private String Userpwd;
-	private int Usertel;
+	private String Usertel;
 	private String Useraddr;
-	private String PersonnalName;
-	public int getId() {
-		return id;
+	private String PersonalName;
+	public Integer getUserID() {
+		return UserID;
 	}
-	public void setId(int id) {
-		this.id = id;
+	public void setUserID(Integer UserID) {
+		this.UserID = UserID;
 	}
 	public String getUsername() {
 		return Username;
@@ -33,10 +38,10 @@ public class User implements Serializable{
 	public void setUserpwd(String userpwd) {
 		Userpwd = userpwd;
 	}
-	public int getUsertel() {
+	public String getUsertel() {
 		return Usertel;
 	}
-	public void setUsertel(int usertel) {
+	public void setUsertel(String usertel) {
 		Usertel = usertel;
 	}
 	public String getUseraddr() {
@@ -45,11 +50,11 @@ public class User implements Serializable{
 	public void setUseraddr(String useraddr) {
 		Useraddr = useraddr;
 	}
-	public String getPersonnalName() {
-		return PersonnalName;
+	public String getPersonalName() {
+		return PersonalName;
 	}
-	public void setPersonnalName(String personnalName) {
-		PersonnalName = personnalName;
+	public void setPersonalName(String personalname) {
+		PersonalName = personalname;
 	}
 	
 	
